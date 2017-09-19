@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run compile && node index.js",
+    "compile": "node node_modules/typescript/bin/tsc",
+    "compile:watch": "node node_modules/typescript/bin/tsc --watch",
+    "test": "npm run compile && node node_modules/mocha/bin/mocha *.spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.43",
+    "@types/node": "^8.0.28",
+    "@types/shortid": "0.0.29",
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3",
+    "node-cmd": "^3.0.0",
+    "rewiremock": "^2.0.0",
+    "shortid": "^2.2.8",
+    "typescript": "^2.5.2"
+  }
+}
